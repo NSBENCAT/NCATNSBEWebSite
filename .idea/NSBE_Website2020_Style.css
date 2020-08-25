@@ -9,7 +9,7 @@ body
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#menuToggle
+#verticelMenu
 {
     display: block;
     position: relative;
@@ -22,7 +22,7 @@ body
     user-select: none;
 }
 
-#menuToggle a
+#verticleMenu a
 {
     text-decoration: none;
     color: #232323;
@@ -30,20 +30,20 @@ body
     transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
+#verticleMenu a:hover
 {
     color: tomato;
 }
 
 
-#menuToggle input
+#verticleMenu input
 {
     display: block;
     width: 40px;
-    height: 32px;
+    height: 100px;
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top: 7px;
+    left: 5px;
 
     cursor: pointer;
 
@@ -56,7 +56,7 @@ body
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+#verticleMenu span
 {
     display: block;
     width: 33px;
@@ -76,12 +76,12 @@ body
     opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#verticleMenu span:first-child
 {
     transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#verticleMenu span:nth-last-child(2)
 {
     transform-origin: 0% 100%;
 }
@@ -90,7 +90,7 @@ body
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+#verticleMenu input:checked ~ span
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -100,7 +100,7 @@ body
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+#verticleMenu input:checked ~ span:nth-last-child(3)
 {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
@@ -109,7 +109,7 @@ body
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+#verticleMenu input:checked ~ span:nth-last-child(2)
 {
     transform: rotate(-45deg) translate(0, -1px);
 }
@@ -142,7 +142,7 @@ body
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
+#verticleMenu input:checked ~ ul
 {
     transform: none;
 }
