@@ -18,22 +18,51 @@
         <span></span>
 
 
-        <ul id="menu">
-            <li><a href="#">About Us! </a></li>
+        <ul id="menu" style="text-align: center">
+            <li><button class="dropdown-btn"> Our Chapter
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-container">
+                    <ul>
+                        <li><a href="#">Chapter Memberhsip</a></li>
+                        <li> <a href="#"> Preidents Corner</a></li>
+                        <li><a href="#"> E-board</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="#">Calendar</a></li>
             <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Membership</a></li>
-                <div class="membershipInfo">
-                    <li> <a href="#"> </a></li>
-                </div>
-            <li><a href="#">Meet your E-Board</a></li>
+            <li><a href="nationalMembership.html">National Information</a></li>
 
         </ul>
     </div>
 </nav>
-<footer>
+<div class="right" style="background-image: url('NSBELogo_Black_withName');">
 
-</footer>
+</div>
+<div class="footer">
+    <footer>
+
+    </footer>
+</div>
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>
+
 
 </body>
 </html>
