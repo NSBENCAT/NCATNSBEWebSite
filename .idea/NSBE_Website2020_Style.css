@@ -210,3 +210,52 @@ body
     margin: 0;
     padding: 0;
 }
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+.header {
+    background-color: #f1f1f1;
+    color: #232323;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#myVideo{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
