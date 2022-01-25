@@ -1,67 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id=>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Membership</title>
-    <link rel ="stylesheet" href="NSBE_Website2020_Style.css">
+    <link rel="stylesheet" href="NSBE_Website2020_Style.css">
 </head>
-<body style="text-align: center">
-<nav role="navigation">
-    <div id="verticleMenu">
-        <input type="checkbox"/>
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-
-        <ul id="menu">
-            <li><a href="#">About Us! </a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li id="dropDown"><a href="#">Membership</a>
-                <ul>
-                    <li id="dropDownContent"><a href="#">National</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Meet your E-Board</a></li>
-
-        </ul>
+<body style="background-color: #004684">
+<div class="topnav">
+    <p><a href="NSBE_Website2020.html"><img src="NSBELogo_Color_withName%20copy.png">
+        NCAT | National society of Black engineers</a></p>
+    <div class="topnavv">
+        <a href="#">Events</a>
+        <a href="corporate_sponors.html">Sponsors</a>
+        <a href="#">Region</a>
+        <div class="dropdown">
+            <button class="drop">
+                Chapter
+            </button>
+            <div class="dropdown-content">
+                <a href="E_Board.html">E-board</a>
+                <a href="nationalMembership.html">Membership</a>
+                <a href="#">President's Corner</a>
+            </div>
+        </div>
     </div>
-</nav>
-<h2> National Membership</h2>
+</div>
+<div class="mem-body">
 
-<p>
-    We want you to become a member of the most dynamic group of students, professionals, advisors, and friends who are
-    working toward eliminating disparities in education and achievement in engineering. Becoming a national member is
-    the easiest way to join our efforts in fulfilling the mission. Regardless of where you might fit on the engineering
-    life cycle, NSBE has a place for you.
-</p>
+    <!--This is the beginning of the membership section under the navigation bar! All the CCS is under mem-intro-->
+    <mem-intro>
+        <div>
+            <h1>MEMBERSHIP ZONE</h1>
+        </div>
+    </mem-intro>
+    <mem-type>
+        <button type="button" class="collapsible">College</button>
+        <div class="content">
+            <p>Collegiate Membership is open to any undergraduate or graduate student enrolled in science, technology, engineering, or math (STEM).
+                If you are a college student but not majoring in any of the above discipline areas, you are eligible to become a Collegiate Affiliate member.
+                <br>
+                Graduate students have the option to be Alumni members OR Collegiate members. We recommend you choose your membership
+                type based on your level of involvement in NSBE. If you do more NSBE interaction on a University campus – Collegiate
+                membership may be right for you.
+                If instead, you interact more with local professionals or feel like the undergraduate chapter doesn’t fit your needs,
+                we welcome you as an Alumni member and encourage you to join or start your local Alumni Extension Chapter.</p>
+        </div>
+        <button type="button" class="collapsible">Open Section 2</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">NSBE JR.</button>
+        <div class="content">
+            <p>The Pre-College Initiative (PCI) program is designed to stimulate the interest in science, technology, engineering,
+                and mathematics fields, or STEM. The goal is to encourage students in grades K–12 to attend college and pursue
+                technical degrees. Our PCI program provides activities to help students discover firsthand how engineering and
+                technology relate to the world around them and discover the excitement of academic excellence, leadership, technical
+                development and teamwork.</p>
+        </div>
+        <!--
+        <div class="coll-title">
+            <h3>Collegiate</h3>
+        </div>
+        <div class="prof=title">
+            <h3>Professional</h3>
+        </div>
 
-<h3>Membership Types</h3>
+        <div class="jr">
+            The Pre-College Initiative (PCI) program is designed to stimulate the interest in science, technology, engineering,
+            and mathematics fields, or STEM. The goal is to encourage students in grades K–12 to attend college and pursue
+            technical degrees. Our PCI program provides activities to help students discover firsthand how engineering and
+            technology relate to the world around them and discover the excitement of academic excellence, leadership, technical
+            development and teamwork.
+        </div>
 
-<ul class="membershipTypes">
-    <li> NSBE Jr: Pre-college (Grades 6-12): <b>5 per year!</b></li>
-    <li>Collegiate: Undergraduate and Graduate students <b>15 per year!</b></li>
-    <li> Preofessional: technical professional and graduate students <b> 50 per year!</b></li>
-    <li> Lifetime: Make the ULTIMATE comitment to NSBE. Dare to SOAR in RARE AIR...</li>
-    <li> International: For individuals who reside outside of the U.S. and Canada. International membership rates apply for all catergories except Lifetime Membership</li>
-</ul>
+        <div class="coll">
+            Collegiate Membership is open to any undergraduate or graduate student enrolled in science, technology, engineering, or math (STEM).
+            If you are a college student but not majoring in any of the above discipline areas, you are eligible to become a Collegiate Affiliate member.
+            <br>
+            Graduate students have the option to be Alumni members OR Collegiate members. We recommend you choose your membership
+            type based on your level of involvement in NSBE. If you do more NSBE interaction on a University campus – Collegiate
+            membership may be right for you.
+            If instead, you interact more with local professionals or feel like the undergraduate chapter doesn’t fit your needs,
+            we welcome you as an Alumni member and encourage you to join or start your local Alumni Extension Chapter.
+        </div>
+        <div class="proff">
+            NSBE Professional Membership is open to any individual who has received a degree in a science, technology,
+            engineering, or math (STEM) discipline.
+            If you are a professional, but did not receive a degree in any of the STEM fields, you are still eligible for
+            membership as an NSBE Professional Affiliate member.
+            Chapter Advisors (Collegiate or NSBE Jr. chapters) who want to join NSBE should join as NSBE Professional or NSBE
+            Professional Affiliate members, depending on background.
+        </div>
+        -->
+    </mem-type>
 
-<h3>Member benefits</h3>
-<ul class="memberBenefits">
-    <li>Access to an unparalleled network of diverse engineers and scientists</li>
-    <li>Access to over $500,00 worth of scholarships</li>
-    <li>Online Job Placement Center</li>
-    <li>Access to 7 Annual Career Fairs through Fall Regional Conferences and NSBE’s Annual Convention</li>
-    <li>Annual subscription to NSBE’s magazines</li>
-    <li>Discounted registration at NSBE Conventions</li>
-    <li>Product discounts</li>
-</ul>
+    <h3>Member benefits</h3>
+    <ul class="memberBenefits">
+        <li>Access to an unparalleled network of diverse engineers and scientists</li>
+        <li>Access to over $500,00 worth of scholarships</li>
+        <li>Online Job Placement Center</li>
+        <li>Access to 7 Annual Career Fairs through Fall Regional Conferences and NSBE’s Annual Convention</li>
+        <li>Annual subscription to NSBE’s magazines</li>
+        <li>Discounted registration at NSBE Conventions</li>
+        <li>Product discounts</li>
+    </ul>
 
-<a id="national" href="https://connect.nsbe.org/NewUser.aspx" ><h3> Become a National Member </h3></a>
-
+    <a id="national" href="https://connect.nsbe.org/NewUser.aspx"><h3> Become a National Member </h3></a>
+    <mem-check>
+        <iframe src="https://docs.google.com/forms/d/1dLfw8KUnhSGYg4Y79r1oRVqXhvrTpP8P0ZVIo7GsXgQ/edit?ts=612d7c40"
+                width="640" height="1089" frameborder="0" marginheight="0" marginwidth="0">Loading…
+        </iframe>
+    </mem-check>
+</div>
 
 
 </body>
 </html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
