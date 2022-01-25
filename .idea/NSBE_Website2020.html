@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<! this site was created by Jordan Whitaker for the North Carolina
+<!-- this site was created by Jordan Whitaker for the North Carolina A&T NSBE Chapter -->
 <html lang="en">
 <head>
     <meta content="width=device-width, intial-scale=1">
@@ -9,43 +9,76 @@
 
 </head>
 <body>
-<nav role="navigation">
-    <div id="verticleMenu">
-        <input type="checkbox"/>
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-
-        <ul id="menu" style="text-align: center">
-            <li><button class="dropdown-btn"> Our Chapter
-                <i class="fa fa-caret-down"></i>
+<div class="topnav">
+    <p><a href="NSBE_Website2020.html"><img src="NSBELogo_Color_withName%20copy.png">
+        NCAT | National society of Black engineers</a></p>
+    <div class="topnavv">
+        <a href="calendar.html">Events</a>
+        <a href="corporate_sponors.html">Sponsors</a>
+        <a href="#">National</a>
+        <div class="dropdown">
+            <button class="drop">
+                Chapter
             </button>
-                <div class="dropdown-container">
-                    <ul>
-                        <li><a href="#">Chapter Memberhsip</a></li>
-                        <li> <a href="#"> Preidents Corner</a></li>
-                        <li><a href="#"> E-board</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="nationalMembership.html">National Information</a></li>
-
-        </ul>
+            <div class="dropdown-content">
+                <a href="E_Board.html">E-board</a>
+                <a href="nationalMembership.html">Membership</a>
+                <a href="#">President's Corner</a>
+            </div>
+        </div>
     </div>
-</nav>
-<div class="right" style="background-image: url('NSBELogo_Black_withName');">
-
 </div>
+<div class="header">
+    <img src="Aggie-Logo%20copy.png">
+    <h1> Welcome To<br>
+     North Carolina A&T<br>
+     NSBE</h1>
+</div>
+<div class="misisonState">
+    <h2 style="color: whitesmoke">
+        Our Mssion is to increase the number of cultrually responsible engineers who excel academically
+        <br> Succees Professionally and
+        <br> positively impact their community
+    </h2>
+</div>
+<main>
+    <div class="column1">
+        <h1> Our Mission is to...</h1>
+    </div>
+    <div class="column2">
+        <h2 style="font-size: 25px;"> "Increase the number of culturally responsible engineers
+            <br>who <span style="color:darkred;">excel academically</span>
+            <br><span style="color: darkgreen">succeed professionally</span>
+            <br> and <span style="color: gold">positvely impact their community</span>"</h2>
+    </div>
+    <div class="column3">
+       <h1> Community </h1>
+        <h3> Our Commitment to community service...</h3>
+    </div>
+    <div class="column4">
+    </div>
+</main>
+<second>
+    <div class="row1">
+        <h1> Covid-19 And NSBE </h1>
+    </div>
+</second>
 <div class="footer">
     <footer>
-
+        <p class="leftfoot">Follow us on social media<br /> Instagram @ncatnsbe <br /> Twitter @ncatnsbe <br /> Be sure to Join our slack channel <a href="ncatnsbe.slack.com" class="SLACKLINK">here</a></p>
+        <p class="rightfoot">Right aligned text here<br />Next line here</p>
+        <p class="feet">Center Text here<br />Next line here</p>
     </footer>
 </div>
 <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
