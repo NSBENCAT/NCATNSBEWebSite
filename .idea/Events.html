@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body style="margin: auto" class="events-tab">
+div class="topnav">
+<p><a href="NSBE_Website2020.html"><img src="NSBELogo_Color_withName%20copy.png">
+    NCAT | National society of Black engineers</a></p>
+<div class="topnavv">
+    <a href="#">Events</a>
+    <a href="corporate_sponors.html">Sponsors</a>
+    <a href="#">Region</a>
+    <div class="dropdown">
+        <button class="drop">
+            Chapter
+        </button>
+        <div class="dropdown-content">
+            <a href="E_Board.html">E-board</a>
+            <a href="nationalMembership.html">Membership</a>
+            <a href="#">President's Corner</a>
+        </div>
+    </div>
+</div>
+    <h1>Keep Up With Chapter 1213</h1>
+
+    <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=7e4grehcmvni9ou7s3dp74qduc%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
+
+
+
+int height(Node* root) {
+if (root == nullptr) return -1;
+
+return max(
+height(root -> left)  + 1,
+height(root -> right) + 1
+);
+}
